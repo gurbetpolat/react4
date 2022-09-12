@@ -1,0 +1,139 @@
+$ana-renk: bisque;
+$backgroundcolor: #b3b3b3;
+;
+$border: orange;
+$btnbtn: #8d8d8d;
+
+
+
+
+
+.container {
+
+    .users-page {
+
+        width: 660px;
+        height: 270px;
+        border: 3px solid $border;
+        margin: auto;
+        background-color: $backgroundcolor;
+        margin-top: 180px;
+
+
+        .header {
+            float: right;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-right: 10px;
+            text-align: center;
+
+            i {
+                font-size: 16px;
+                font-weight: 800;
+                margin-bottom: 17px;
+
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 800;
+            }
+
+        }
+
+        .footer {
+            display: flex;
+
+            .musicButtonContainer {
+                flex: 1;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+             
+                padding: 10px;
+
+                .musicButton {
+                  margin-top: 15px;
+                  margin-left: 10px;
+                    height: 60px;
+                    width: 90px;
+                    background-color: $btnbtn  !important;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: black;
+                    &:active {
+                        background-color: $border  !important;
+                    }
+
+                }
+            }
+
+            .footer-right {
+
+                float: right;
+                margin-top: 25px;
+
+                .control {
+
+                    text-align: center;
+
+
+                    h6 {
+                        margin-left: 25px;
+                        font-weight: bold;
+
+                    }
+
+                    .select {
+                        margin-left: 100px;
+                        background-color: black;
+                        width: 60px;
+                        height: 25px;
+                        color: black;
+
+                        .inner {
+                            float: left;
+                            width: 20px;
+                            height: 13px;
+                            margin: 5px;
+                            background-color: blue;
+                        }
+                    }
+                }
+
+
+                .message {
+                    height: 40px;
+                    width: 150px;
+                    margin-left: 50px;
+                    text-align: center;
+                    padding: 5px;
+                    margin-top: 10px;
+                    background-color: $btnbtn;
+                    color: black;
+                    font-size: 16px;
+
+                }
+
+                .volume-slider {
+                    input {
+                        color: blue;
+                        width: 200px;
+                        margin-left: 30px;
+                    }
+
+                }
+
+
+            }
+
+
+
+        }
+
+
+    }
+
+
+
+}
